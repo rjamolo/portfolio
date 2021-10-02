@@ -2090,10 +2090,34 @@ __webpack_require__.r(__webpack_exports__);
   },
   computed: {
     menu: function menu() {
-      return ['General', [{
-        to: '/',
+      return ['Main Menus', [{
+        label: 'Dashboard',
+        subLabel: 'Submenus Example',
         icon: 'desktop-mac',
-        label: 'Dashboard'
+        menu: [{
+          to: '/',
+          label: 'Sample 1'
+        }]
+      }], [{
+        label: 'Clients',
+        subLabel: 'Submenus Example',
+        icon: 'account-multiple',
+        updateMark: true,
+        menu: [{
+          to: '/clients/index',
+          label: 'Sample 1'
+        }]
+      }], [{
+        label: 'Submenus',
+        subLabel: 'Submenus Example',
+        icon: 'view-list',
+        menu: [{
+          to: '/tables',
+          label: 'Sub-item One'
+        }, {
+          to: '/forms',
+          label: 'Sub-item Two'
+        }]
       }]
       /* 'Resource',
       [
