@@ -27,14 +27,9 @@ export default {
         [
           {
             label: 'Dashboard',
-            subLabel: 'Submenus Example',
-            icon: 'desktop-mac',
-            menu: [
-              {
                 to: '/',
-                label: 'Sample 1'
-              }
-            ]
+            subLabel: 'Submenus Example',
+            icon: 'desktop-mac'
           }
         ],
         [

@@ -498,7 +498,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
   },
   computed: _objectSpread({
     titleStack: function titleStack() {
-      return ['Admin', 'Profile'];
+      return ['Dashboard', 'Profile'];
     }
   }, (0,vuex__WEBPACK_IMPORTED_MODULE_7__.mapState)(['userName', 'userEmail']))
 });
@@ -1302,7 +1302,7 @@ var render = function() {
       _c(
         "hero-bar",
         [
-          _vm._v("\n    Profile\n    "),
+          _vm._v("\n    Super Admin\n    "),
           _c(
             "router-link",
             {
@@ -1323,8 +1323,6 @@ var render = function() {
           _c(
             "tiles",
             [
-              _c("profile-update-form", { staticClass: "tile is-child" }),
-              _vm._v(" "),
               _c(
                 "card-component",
                 {
@@ -1374,9 +1372,7 @@ var render = function() {
               )
             ],
             1
-          ),
-          _vm._v(" "),
-          _c("password-update-form")
+          )
         ],
         1
       )

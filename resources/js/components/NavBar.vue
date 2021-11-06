@@ -36,9 +36,9 @@
               <span>Messages</span>
             </a>
             <hr class="navbar-divider" />
-            <a class="navbar-item">
+            <a class="navbar-item" @click="logout">
               <b-icon icon="logout" custom-size="default"></b-icon>
-              <span>Log Out</span>
+              <span>Logout</span>
             </a>
           </div>
         </nav-bar-menu>
@@ -60,7 +60,7 @@ export default {
   },
   data () {
     return {
-      isMenuNavBarActive: false
+      isMenuNavBarActive: false,
     }
   },
   computed: {

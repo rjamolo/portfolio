@@ -2,14 +2,14 @@
   <div>
     <title-bar :title-stack="titleStack"/>
     <hero-bar>
-      Profile
+      Super Admin
       <router-link slot="right" to="/" class="button">
         Dashboard
       </router-link>
     </hero-bar>
     <section class="section is-main-section">
       <tiles>
-        <profile-update-form class="tile is-child"/>
+        <!-- <profile-update-form class="tile is-child"/> -->
         <card-component title="Profile" icon="account" class="tile is-child">
           <user-avatar class="image has-max-width is-aligned-center"/>
           <hr>
@@ -22,7 +22,7 @@
           </b-field>
         </card-component>
       </tiles>
-      <password-update-form/>
+      <!-- <password-update-form/> -->
     </section>
   </div>
 </template>
@@ -42,7 +42,7 @@ export default {
   computed: {
     titleStack () {
       return [
-        'Admin',
+        'Dashboard',
         'Profile'
       ]
     },

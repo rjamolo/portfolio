@@ -61,7 +61,6 @@ export default {
   computed: {
     titleStack () {
       return [
-        'Admin',
         'Dashboard'
       ]
     }
